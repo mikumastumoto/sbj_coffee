@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sbj_coffee/components/like_page.dart';
+import 'package:sbj_coffee/components/coffee_page.dart';
 
 void main() {
   // 最初に表示するWidget
@@ -37,14 +39,14 @@ class _HomePageState extends State<HomePage> {
   // 表示する Widget の一覧
   static List<Widget> _pageList = [
     CustomPage(title: 'Home'),
-    CustomPage(title: 'Coffee'),
-    CustomPage(title: 'Like'),
+    CoffeePage(title: 'Coffee'),
+    LikePage(title: 'Like'),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('sample1'),
+        title: const Text('Home'),
       ),
       body: _pageList[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
