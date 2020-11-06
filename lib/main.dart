@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sbj_coffee/components/like_page.dart';
+import 'package:sbj_coffee/components/coffee_page.dart';
 
 void main() {
   // 最初に表示するWidget
@@ -44,7 +46,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('sample1'),
+        title: const Text('Home'),
       ),
       body: _pageList[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
