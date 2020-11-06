@@ -38,9 +38,9 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   // 表示する Widget の一覧
   static List<Widget> _pageList = [
-    CustomPage(title: 'Home'),
-    CoffeePage(title: 'Coffee'),
-    LikePage(title: 'Like'),
+    CustomPage(title: 'Ho'),
+    CustomPage(title: 'Coffee'),
+    CustomPage(title: 'Like'),
   ];
   @override
   Widget build(BuildContext context) {
